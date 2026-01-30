@@ -1,0 +1,610 @@
+<!-- Module 4: Ethics in AI Healthcare -->
+<div class="module-header">
+    <h2 class="module-title">Modul 4: Ethischer Einsatz von KI im Gesundheitswesen</h2>
+    <p class="module-subtitle">Verantwortungsvoller Umgang mit AI-Technologien: Chancen, Risiken und ethische Überlegungen</p>
+</div>
+
+<!-- Introduction Section -->
+<section class="section">
+    <h3 class="section-title">Von der Anwendung zur Verantwortung</h3>
+    <div class="section-content">
+        <p>Nachdem wir in den vorherigen Modulen konkrete Anwendungsbeispiele für AI in der Medizin kennengelernt haben - von der Tumordokumentation bis zu AI-Copiloten in der Primärversorgung - wenden wir uns nun den ethischen Aspekten zu, die bei der Implementierung dieser Technologien berücksichtigt werden müssen.</p>
+        
+        <div class="alert alert-warning">
+            <h4>Warum Ethik in der AI-Medizin wichtig ist</h4>
+            <p>Der Einsatz von AI im Gesundheitswesen bringt nicht nur technische und praktische Herausforderungen mit sich, sondern wirft auch fundamentale ethische Fragen auf: Wie können wir sicherstellen, dass AI-Systeme fair, transparent und im besten Interesse der Patienten eingesetzt werden?</p>
+        </div>
+        
+        <p>Dieses Modul führt Sie durch die wichtigsten ethischen Überlegungen und zeigt anhand aktueller Forschung, welche unbeabsichtigten Konsequenzen der AI-Einsatz haben kann.</p>
+    </div>
+</section>
+
+<!-- Ethical Framework -->
+<section class="section">
+    <h3 class="section-title">Ethische Dimensionen der AI in der Medizin</h3>
+    <div class="section-content">
+        <p>Die ethischen Herausforderungen beim Einsatz von AI im Gesundheitswesen lassen sich in verschiedene Kategorien einteilen, die auf unterschiedlichen Ebenen wirken:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">📊 Epistemische Probleme</h4>
+                </div>
+                <p><strong>Wissens- und Erkenntnisbezogene Herausforderungen:</strong></p>
+                <ul>
+                    <li>Irreführende oder unvollständige Evidenz</li>
+                    <li>Undurchsichtige AI-Entscheidungen ("Black Box")</li>
+                    <li>Unzureichende Validierung von AI-Systemen</li>
+                    <li>Fehlende Nachvollziehbarkeit</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">⚖️ Normative Probleme</h4>
+                </div>
+                <p><strong>Werte- und Gerechtigkeitsbezogene Herausforderungen:</strong></p>
+                <ul>
+                    <li>Unfaire Behandlung verschiedener Patientengruppen</li>
+                    <li>Bias und Diskriminierung in AI-Algorithmen</li>
+                    <li>Ungleiche Zugänglichkeit zu AI-gestützter Versorgung</li>
+                    <li>Transformative Effekte auf die Arzt-Patient-Beziehung</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">🔍 Nachverfolgbarkeit</h4>
+                </div>
+                <p><strong>Verantwortlichkeits- und Transparenzbezogene Herausforderungen:</strong></p>
+                <ul>
+                    <li>Unklare Verantwortlichkeiten bei AI-Fehlern</li>
+                    <li>Schwierige Nachvollziehbarkeit von Entscheidungen</li>
+                    <li>Herausforderungen bei der Qualitätskontrolle</li>
+                    <li>Rechtliche und regulatorische Unsicherheiten</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Levels of Impact -->
+<section class="section">
+    <h3 class="section-title">Ebenen der ethischen Auswirkungen</h3>
+    <div class="section-content">
+        <p>Ethische Probleme beim Einsatz von AI in der Medizin manifestieren sich auf verschiedenen Ebenen der Abstraktion:</p>
+        
+        <div class="alert alert-info">
+            <h4>🎯 Sechs Ebenen der Auswirkung</h4>
+            <ol>
+                <li><strong>Individuelle Ebene:</strong> Auswirkungen auf einzelne Patienten</li>
+                <li><strong>Zwischenmenschliche Ebene:</strong> Arzt-Patient-Beziehung</li>
+                <li><strong>Gruppenebene:</strong> Auswirkungen auf Patientengruppen</li>
+                <li><strong>Institutionelle Ebene:</strong> Auswirkungen auf Krankenhäuser und Praxen</li>
+                <li><strong>Sektorale Ebene:</strong> Auswirkungen auf das Gesundheitssystem</li>
+                <li><strong>Gesellschaftliche Ebene:</strong> Gesamtgesellschaftliche Auswirkungen</li>
+            </ol>
+        </div>
+        
+        <p>Diese mehrdimensionale Betrachtung ist wichtig, da Lösungen für ethische Probleme auf einer Ebene unbeabsichtigte Konsequenzen auf anderen Ebenen haben können.</p>
+    </div>
+</section>
+
+<!-- Key Ethical Challenges -->
+<section class="section">
+    <h3 class="section-title">Zentrale ethische Herausforderungen</h3>
+    <div class="section-content">
+        <p>Basierend auf aktueller Forschung lassen sich mehrere Schlüsselbereiche identifizieren, die besondere Aufmerksamkeit erfordern:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">🔒 Datenschutz und Privatsphäre</h4>
+                </div>
+                <p>AI-Systeme benötigen große Mengen sensibler Gesundheitsdaten. Herausforderungen:</p>
+                <ul>
+                    <li>Schutz von Patientendaten</li>
+                    <li>Einverständniserklärungen für AI-Nutzung</li>
+                    <li>Anonymisierung und Pseudonymisierung</li>
+                    <li>Grenzüberschreitender Datentransfer</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">🎯 Bias und Fairness</h4>
+                </div>
+                <p>AI-Systeme können bestehende Ungleichheiten verstärken:</p>
+                <ul>
+                    <li>Unterrepräsentation bestimmter Gruppen in Trainingsdaten</li>
+                    <li>Algorithmische Diskriminierung</li>
+                    <li>Ungleiche Leistung bei verschiedenen Populationen</li>
+                    <li>Verstärkung sozialer Ungleichheiten</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">🔍 Transparenz und Erklärbarkeit</h4>
+                </div>
+                <p>Viele AI-Systeme sind "Black Boxes":</p>
+                <ul>
+                    <li>Unverständliche Entscheidungsprozesse</li>
+                    <li>Schwierige Nachvollziehbarkeit für Ärzte</li>
+                    <li>Herausforderungen bei der Patientenaufklärung</li>
+                    <li>Probleme bei der Qualitätssicherung</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Deskilling Case Study Introduction -->
+<section class="section">
+    <h3 class="section-title">Fallstudie: Das Deskilling-Problem</h3>
+    <div class="section-content">
+        <p>Eine besonders wichtige ethische Herausforderung ist das sogenannte "Deskilling" - der Verlust von Fähigkeiten durch übermäßige Abhängigkeit von AI-Systemen. Eine aktuelle Studie illustriert dieses Problem eindrucksvoll.</p>
+        
+        <div class="alert alert-error">
+            <h4>⚠️ Unerwartete Konsequenzen</h4>
+            <p>Während AI-Systeme entwickelt werden, um Ärzte zu unterstützen, können sie paradoxerweise dazu führen, dass medizinische Fachkräfte wichtige Fähigkeiten verlieren. Dies wirft fundamentale Fragen über die Balance zwischen technologischer Unterstützung und menschlicher Expertise auf.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TIME Study Details -->
+<section class="section">
+    <h3 class="section-title">Die TIME-Studie: Evidenz für Deskilling</h3>
+    <div class="section-content">
+        <p>Eine im August 2025 veröffentlichte Studie in der Zeitschrift "Lancet Gastroenterology and Hepatology" liefert die ersten realen Belege für das Deskilling-Phänomen bei der Verwendung von AI in der Medizin.</p>
+        
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">📋 Studiendesign</h4>
+            </div>
+            <ul>
+                <li><strong>Kontext:</strong> Vier Endoskopie-Zentren in Polen</li>
+                <li><strong>Teilnehmer:</strong> 19 erfahrene Endoskopisten</li>
+                <li><strong>Untersuchungen:</strong> 2.177 Koloskopien (1.443 ohne AI-Unterstützung)</li>
+                <li><strong>Zeitraum:</strong> September 2021 bis März 2022</li>
+                <li><strong>AI-System:</strong> Tool zur Polypen-Erkennung</li>
+                <li><strong>Methodik:</strong> Vergleich vor und nach AI-Implementierung</li>
+            </ul>
+        </div>
+        
+        <div class="alert alert-warning">
+            <h4>🔍 Zentrale Ergebnisse</h4>
+            <p>Die Studie fand heraus, dass Ärzte, die regelmäßig AI verwendeten, innerhalb von Monaten weniger geschickt wurden:</p>
+            <ul>
+                <li><strong>Adenoma Detection Rate (ADR):</strong> Rückgang von 28% auf 22% ohne AI-Unterstützung</li>
+                <li><strong>Ursache:</strong> Übermäßige Abhängigkeit von AI-Empfehlungen</li>
+                <li><strong>Auswirkung:</strong> Ärzte wurden "weniger motiviert, weniger fokussiert und weniger verantwortlich" bei Entscheidungen ohne AI</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Deskilling Mechanisms -->
+<section class="section">
+    <h3 class="section-title">Mechanismen des Deskilling</h3>
+    <div class="section-content">
+        <p>Die Forscher identifizierten mehrere Mechanismen, die zum Verlust medizinischer Fähigkeiten führen können:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">🗺️ Der "Google Maps Effekt"</h4>
+                </div>
+                <p>Wie ein Co-Autor der Studie erklärte: "Stellen Sie sich vor, Sie möchten irgendwohin reisen und können Google Maps nicht verwenden. Wir nennen es den Google Maps-Effekt. Wir versuchen, irgendwo hinzukommen, und es ist unmöglich, eine normale Karte zu verwenden."</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">👁️ Schwächung visueller Suchgewohnheiten</h4>
+                </div>
+                <p>Die Exposition gegenüber AI schwächte die visuellen Suchgewohnheiten und Aufmerksamkeitsmuster der Ärzte, die für die Erkennung von Polypen kritisch sind. Die Abhängigkeit von AI-Erkennung könnte die menschliche Mustererkennung abstumpfen.</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">🎯 Reduziertes diagnostisches Vertrauen</h4>
+                </div>
+                <p>Regelmäßige AI-Nutzung könnte das "diagnostische Vertrauen" reduzieren, wenn AI-Unterstützung entzogen wird, oder die Fähigkeiten der Endoskopisten bei der Manövrierung des Koloskops beeinträchtigen.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Broader Implications -->
+<section class="section">
+    <h3 class="section-title">Weitreichende Implikationen</h3>
+    <div class="section-content">
+        <p>Das Deskilling-Problem hat weitreichende Implikationen für die Zukunft der medizinischen Praxis:</p>
+        
+        <div class="alert alert-error">
+            <h4>🚨 Risiken für die Patientensicherheit</h4>
+            <p>Wenn Ärzte ihre Fähigkeiten verlieren und gleichzeitig von AI-Systemen abhängig werden, entstehen neue Risiken:</p>
+            <ul>
+                <li><strong>Technologieausfall:</strong> Was passiert, wenn AI-Systeme nicht verfügbar sind?</li>
+                <li><strong>Qualitätsverlust:</strong> Verschlechterung der medizinischen Versorgung ohne AI</li>
+                <li><strong>Überabhängigkeit:</strong> Verlust der kritischen Bewertung von AI-Empfehlungen</li>
+                <li><strong>Kompetenzverfall:</strong> Langfristige Erosion medizinischer Expertise</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">🤔 Die ethische Frage</h4>
+            </div>
+            <p>Wie ein Experte es formulierte: "Die ethische Frage ist dann, ob wir AI mehr vertrauen als Menschen. Oft erwarten wir, dass ein Mensch alle AI-Entscheidungen überwacht, aber wenn die menschlichen Experten weniger Anstrengung in ihre eigenen Entscheidungen stecken, als Folge der Einführung von AI-Systemen, könnte das problematisch sein."</p>
+        </div>
+    </div>
+</section>
+
+<!-- Resources and Materials -->
+<section class="section">
+    <h3 class="section-title">Studienmaterialien und weiterführende Ressourcen</h3>
+    <div class="section-content">
+        <p>Für ein tieferes Verständnis der ethischen Aspekte von AI im Gesundheitswesen stehen Ihnen folgende Ressourcen zur Verfügung:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">📄 Ethik-Übersicht</h4>
+                </div>
+                <p>Umfassende Übersicht über ethische Aspekte von AI im Gesundheitswesen aus der Literatur.</p>
+                <a href="downloads/ethicsinAIHealth.pdf" download class="download-link">
+                    📥 PDF herunterladen
+                </a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">📄 Deskilling-Studie</h4>
+                </div>
+                <p>Die vollständige TIME-Studie über Deskilling-Effekte bei AI-Nutzung in der Endoskopie.</p>
+                <a href="downloads/TIMEStudy_Deskilling.pdf" download class="download-link">
+                    📥 PDF herunterladen
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Interactive Ethics Discussion -->
+<section class="section">
+    <h3 class="section-title">Interaktive Ethik-Diskussion</h3>
+    <div class="section-content">
+        <p>Jetzt haben Sie die Gelegenheit, die ethischen Aspekte der AI-Anwendung im Gesundheitswesen interaktiv zu erkunden und zu diskutieren!</p>
+        
+        <div class="alert alert-info">
+            <h4>🤖 EthikKIReflect GPT</h4>
+            <p>Nutzen Sie den spezialisierten ChatGPT für ethische Reflexionen über AI im Gesundheitswesen. Diskutieren Sie 15 Minuten lang verschiedene ethische Szenarien und erarbeiten Sie wesentliche Aspekte im Dialog.</p>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">💭 Diskussionsthemen</h4>
+            </div>
+            <p>Erkunden Sie folgende ethische Fragestellungen:</p>
+            <ul>
+                <li>Wie können wir Deskilling-Effekte vermeiden oder minimieren?</li>
+                <li>Welche Verantwortung haben Ärzte bei der Nutzung von AI-Systemen?</li>
+                <li>Wie können wir Fairness und Gerechtigkeit bei AI-Anwendungen sicherstellen?</li>
+                <li>Welche Rolle sollte Transparenz bei medizinischen AI-Systemen spielen?</li>
+                <li>Wie können wir Patientenautonomie in einer AI-gestützten Medizin wahren?</li>
+            </ul>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="https://chatgpt.com/g/g-68a32bec555c8191a62c538fa069d82e-ethikkirefelct" target="_blank" class="btn btn-primary">
+                    EthikKIReflect öffnen
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Solutions and Best Practices -->
+<section class="section">
+    <h3 class="section-title">Lösungsansätze und Best Practices</h3>
+    <div class="section-content">
+        <p>Trotz der Herausforderungen gibt es Ansätze, um ethische Probleme zu adressieren und verantwortungsvollen AI-Einsatz zu fördern:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">🛡️ Schutzmaßnahmen gegen Deskilling</h4>
+                </div>
+                <ul>
+                    <li><strong>Regelmäßiges Training:</strong> Kontinuierliche Schulung ohne AI-Unterstützung</li>
+                    <li><strong>Rotationssysteme:</strong> Wechsel zwischen AI-gestützter und traditioneller Praxis</li>
+                    <li><strong>Kompetenzerhaltung:</strong> Gezielte Übungen zur Aufrechterhaltung manueller Fähigkeiten</li>
+                    <li><strong>Kritisches Denken:</strong> Schulung in der kritischen Bewertung von AI-Empfehlungen</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">📋 Governance-Frameworks</h4>
+                </div>
+                <ul>
+                    <li><strong>Ethik-Komitees:</strong> Institutionelle Überwachung von AI-Implementierungen</li>
+                    <li><strong>Richtlinien:</strong> Klare Regeln für AI-Nutzung</li>
+                    <li><strong>Auditierung:</strong> Regelmäßige Überprüfung von AI-Systemen</li>
+                    <li><strong>Transparenz:</strong> Offenlegung von AI-Nutzung gegenüber Patienten</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">🎓 Ausbildung und Schulung</h4>
+                </div>
+                <ul>
+                    <li><strong>AI-Literacy:</strong> Grundverständnis für AI-Technologien</li>
+                    <li><strong>Ethik-Training:</strong> Sensibilisierung für ethische Aspekte</li>
+                    <li><strong>Interdisziplinäre Zusammenarbeit:</strong> Kooperation zwischen Medizin, Technik und Ethik</li>
+                    <li><strong>Kontinuierliche Weiterbildung:</strong> Anpassung an neue Entwicklungen</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Future Considerations -->
+<section class="section">
+    <h3 class="section-title">Zukunftsperspektiven und Empfehlungen</h3>
+    <div class="section-content">
+        <p>Für einen verantwortungsvollen Umgang mit AI im Gesundheitswesen sind mehrere Entwicklungen erforderlich:</p>
+        
+        <div class="alert alert-success">
+            <h4>🔮 Empfehlungen für die Zukunft</h4>
+            <ul>
+                <li><strong>Proaktive Ethik:</strong> Ethische Überlegungen von Anfang an in die AI-Entwicklung einbeziehen</li>
+                <li><strong>Multidisziplinäre Teams:</strong> Zusammenarbeit zwischen Medizinern, Technikern, Ethikern und Patienten</li>
+                <li><strong>Kontinuierliche Forschung:</strong> Weitere Studien zu Langzeiteffekten von AI-Nutzung</li>
+                <li><strong>Adaptive Regulierung:</strong> Flexible Gesetze und Richtlinien, die mit der Technologie mithalten</li>
+                <li><strong>Patientenzentrierte Ansätze:</strong> Fokus auf Patientenwohl und -autonomie</li>
+            </ul>
+        </div>
+        
+        <p>Wie ein Experte es zusammenfasste: "Das geht nicht nur um die Überwachung von Technologie. Es geht darum, die Komplexitäten eines neuen Mensch-AI-klinischen Ökosystems zu navigieren." Die Etablierung von Schutzmaßnahmen ist kritisch, um "wesentliche Fähigkeiten in einer Welt zu bewahren, in der AI allgegenwärtig wird."</p>
+    </div>
+</section>
+
+<!-- Module Summary -->
+<section class="section">
+    <h3 class="section-title">Zusammenfassung Modul 4</h3>
+    <div class="section-content">
+        <p>In diesem abschließenden Modul haben Sie die ethischen Dimensionen der AI-Anwendung im Gesundheitswesen kennengelernt:</p>
+        
+        <ul>
+            <li>Ethische Kategorien: epistemische, normative und nachverfolgbarkeitsbezogene Probleme</li>
+            <li>Sechs Ebenen der ethischen Auswirkungen von der individuellen bis zur gesellschaftlichen Ebene</li>
+            <li>Zentrale Herausforderungen: Datenschutz, Bias, Transparenz</li>
+            <li>Das Deskilling-Problem: Evidenz aus der TIME-Studie</li>
+            <li>Mechanismen des Kompetenzverlusts bei AI-Abhängigkeit</li>
+            <li>Lösungsansätze und Best Practices für verantwortungsvollen AI-Einsatz</li>
+            <li>Zukunftsperspektiven für ethische AI-Implementierung</li>
+        </ul>
+        
+        <p>Sie haben nun einen umfassenden Überblick über die Grundlagen der LLM/AI-Verwendung in der Medizin erhalten - von den technischen Grundlagen über praktische Anwendungsbeispiele bis hin zu den ethischen Überlegungen, die bei der Implementierung berücksichtigt werden müssen.</p>
+    </div>
+</section>
+
+<!-- Assessment -->
+<div class="assessment">
+    <h3 class="assessment-title">Lernzielkontrolle Modul 4</h3>
+    <p style="text-align: center; margin-bottom: 30px;">Beantworten Sie die folgenden Fragen zu den ethischen Aspekten von AI im Gesundheitswesen. Sie benötigen mindestens 60% richtige Antworten, um das Modul abzuschließen.</p>
+    
+    <form id="assessment-form-4">
+        <div class="question">
+            <p class="question-text">1. Was ist das Hauptergebnis der TIME-Studie zum Deskilling?</p>
+            <ul class="options">
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q1" value="a">
+                        AI-Systeme verbessern immer die ärztliche Leistung
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q1" value="b">
+                        Ärzte verloren Fähigkeiten bei der Polypen-Erkennung ohne AI-Unterstützung
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q1" value="c">
+                        AI-Systeme sind unzuverlässig
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q1" value="d">
+                        Patienten lehnen AI-Unterstützung ab
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <p class="question-text">2. Welche drei Kategorien ethischer Probleme werden in der AI-Medizin unterschieden?</p>
+            <ul class="options">
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q2" value="a">
+                        Epistemische, normative und nachverfolgbarkeitsbezogene Probleme
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q2" value="b">
+                        Technische, finanzielle und soziale Probleme
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q2" value="c">
+                        Individuelle, institutionelle und gesellschaftliche Probleme
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q2" value="d">
+                        Datenschutz, Sicherheit und Effizienz
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <p class="question-text">3. Was ist der "Google Maps Effekt" im Kontext des Deskilling?</p>
+            <ul class="options">
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q3" value="a">
+                        AI-Systeme sind wie Navigationssysteme sehr nützlich
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q3" value="b">
+                        Menschen können ohne technische Hilfsmittel nicht mehr navigieren
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q3" value="c">
+                        Übermäßige Abhängigkeit von AI führt zum Verlust grundlegender Fähigkeiten
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q3" value="d">
+                        Google entwickelt medizinische AI-Systeme
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <p class="question-text">4. Welche Maßnahme kann helfen, Deskilling-Effekte zu vermeiden?</p>
+            <ul class="options">
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q4" value="a">
+                        Vollständige Abhängigkeit von AI-Systemen
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q4" value="b">
+                        Regelmäßiges Training ohne AI-Unterstützung
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q4" value="c">
+                        Vermeidung jeglicher AI-Nutzung
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q4" value="d">
+                        Ausschließliche Nutzung von AI-Systemen
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <p class="question-text">5. Auf wie vielen Ebenen können sich ethische Probleme bei AI im Gesundheitswesen manifestieren?</p>
+            <ul class="options">
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q5" value="a">
+                        Sechs Ebenen: von individuell bis gesellschaftlich
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q5" value="b">
+                        Drei Ebenen: individuell, institutionell, gesellschaftlich
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q5" value="c">
+                        Vier Ebenen: lokal, regional, national, international
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q5" value="d">
+                        Zwei Ebenen: technisch und ethisch
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <button type="button" class="btn btn-primary btn-submit-assessment">
+                Lernzielkontrolle abschließen
+            </button>
+        </div>
+    </form>
+</div>
+
+<!-- Navigation -->
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid var(--medium-gray);">
+    <div>
+        <button class="btn btn-secondary btn-prev-module">
+            ← Modul 3
+        </button>
+    </div>
+    <div>
+        <span style="color: var(--text-light); font-weight: 600;">Modul 4 von 4</span>
+    </div>
+    <div>
+        <button class="btn btn-success" onclick="courseManager.generateCertificate()" style="display: none;" id="certificate-btn">
+            🎓 Zertifikat generieren
+        </button>
+    </div>
+</div>
+
+<script>
+// Module 4 specific JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    // Update correct answers for Module 4
+    if (window.courseManager) {
+        const originalGetCorrectAnswers = window.courseManager.getCorrectAnswers;
+        window.courseManager.getCorrectAnswers = function(moduleNumber) {
+            if (moduleNumber === 4) {
+                return {
+                    'q1': 'b', // Ärzte verloren Fähigkeiten bei der Polypen-Erkennung ohne AI-Unterstützung
+                    'q2': 'a', // Epistemische, normative und nachverfolgbarkeitsbezogene Probleme
+                    'q3': 'c', // Übermäßige Abhängigkeit von AI führt zum Verlust grundlegender Fähigkeiten
+                    'q4': 'b', // Regelmäßiges Training ohne AI-Unterstützung
+                    'q5': 'a'  // Sechs Ebenen: von individuell bis gesellschaftlich
+                };
+            }
+            return originalGetCorrectAnswers.call(this, moduleNumber);
+        };
+        
+        // Show certificate button if this is the last module and it's completed
+        const originalSubmitAssessment = window.courseManager.submitAssessment;
+        window.courseManager.submitAssessment = function() {
+            originalSubmitAssessment.call(this);
+            
+            // Check if Module 4 is completed and show certificate button
+            if (this.currentModule === 4 && this.moduleProgress[4].completed) {
+                const certBtn = document.getElementById('certificate-btn');
+                if (certBtn) {
+                    certBtn.style.display = 'inline-block';
+                }
+            }
+        };
+    }
+});
+</script>
+

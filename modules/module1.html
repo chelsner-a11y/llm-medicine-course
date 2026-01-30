@@ -1,0 +1,448 @@
+<!-- Module 1: Introduction to AI/LLM in Medicine -->
+<div class="module-header">
+    <h2 class="module-title">Modul 1: Einführung in Generative AI für die Medizin</h2>
+    <p class="module-subtitle">Grundlagen, Definitionen und Anwendungsbereiche von AI und LLMs in der Medizin</p>
+</div>
+
+<!-- Introduction Section -->
+<section class="section">
+    <h3 class="section-title">Die Bedeutung von AI in der modernen Medizin</h3>
+    <div class="section-content">
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/ai-medical-analysis.png" alt="AI-gestützte medizinische Datenanalyse" style="max-width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+        </div>
+        
+        <p>In der heutigen Welt haben Ärzte, Forscher und andere Gesundheitsfachkräfte ein mächtiges Werkzeug zur Verfügung: <strong>Generative Künstliche Intelligenz</strong>.</p>
+        
+        <p>Mit der Fähigkeit, riesige Mengen medizinischer Daten zu analysieren, kann generative AI Muster erkennen, die für das menschliche Auge unsichtbar sind, Patientenergebnisse vorhersagen und sogar bei der Entwicklung personalisierter Medikamente helfen.</p>
+        
+        <div class="alert alert-info">
+            <h4>Warum ist AI in der Medizin wichtig?</h4>
+            <p>Die Gesundheitssysteme weltweit stehen vor enormen Herausforderungen: steigende Kosten, Personalmangel und eine alternde Bevölkerung. AI-Technologien bieten innovative Lösungsansätze für diese komplexen Probleme.</p>
+        </div>
+        
+        <p>Der Umgang mit dieser Technologie muss jedoch erprobt werden, und ethische Grundsätze sind dabei von entscheidender Bedeutung. Dieser Kurs führt Sie durch die wichtigsten Aspekte der verantwortungsvollen Anwendung von AI in der Medizin.</p>
+    </div>
+</section>
+
+<!-- Learning Objectives -->
+<section class="section">
+    <h3 class="section-title">Lernziele dieses Moduls</h3>
+    <div class="section-content">
+        <p>In diesem ersten Modul lernen Sie:</p>
+        <ul>
+            <li><strong>Künstliche Intelligenz, Machine Learning, überwachtes und unüberwachtes Lernen</strong> zu definieren</li>
+            <li><strong>Generative AI und verschiedene Modelltypen</strong> zu erklären</li>
+            <li><strong>Large Language Models</strong> zu beschreiben und für medizinische Anwendungsfälle anzupassen</li>
+            <li><strong>Prompt Design</strong> zu definieren und effektive Prompts zu erstellen</li>
+            <li><strong>AI-Tools</strong> zu erkunden und generative AI-Modelle anzupassen</li>
+        </ul>
+    </div>
+</section>
+
+<!-- AI Fundamentals -->
+<section class="section">
+    <h3 class="section-title">Grundlagen: AI, Machine Learning und Deep Learning</h3>
+    <div class="section-content">
+        <p>Bevor wir uns mit den Anwendungen in der Medizin beschäftigen, ist es wichtig, die Grundlagen zu verstehen. Lassen Sie uns mit einer grundlegenden Erklärung der generativen AI beginnen und erkunden, wie sie in die Künstliche Intelligenz und das Machine Learning eingeordnet wird.</p>
+        
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Was ist Generative AI?</h4>
+            </div>
+            <p><strong>Generative AI</strong> ist eine Art von Künstlicher Intelligenz-Technologie, die verschiedene Arten von Inhalten produzieren kann, einschließlich Text, Bilder, Audio und synthetischen Daten.</p>
+        </div>
+        
+        <p>Aber was ist Künstliche Intelligenz (AI), und was ist der Unterschied zwischen AI und Machine Learning?</p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <img src="assets/ai-ml-hierarchy.png" alt="Hierarchie von AI, Machine Learning und Deep Learning" style="max-width: 400px; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Künstliche Intelligenz (AI)</h4>
+                </div>
+                <p>AI ist eine Disziplin der Informatik, die verwendet wird, um intelligente Agenten zu schaffen - Systeme, die denken, lernen und autonom handeln können.</p>
+                <p><em>AI konzentriert sich auf die Theorie und Methoden zum Bau von Maschinen, die wie Menschen denken und handeln.</em></p>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Machine Learning (ML)</h4>
+                </div>
+                <p>Machine Learning ist ein Teilbereich der AI und ist ein Programm oder System, das ein Modell aus Eingabedaten trainiert.</p>
+                <p><em>Machine Learning gibt dem Computer die Fähigkeit zu lernen, ohne explizit programmiert zu werden.</em></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Types of Machine Learning -->
+<section class="section">
+    <h3 class="section-title">Arten des Machine Learning</h3>
+    <div class="section-content">
+        <p>Die zwei häufigsten Klassen von Machine Learning-Modellen sind:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Überwachtes Lernen (Supervised Learning)</h4>
+                </div>
+                <p>Verwendet gelabelte Trainingsdaten, um Vorhersagen zu treffen. Das Modell lernt aus Beispielen mit bekannten Eingaben und Ausgaben.</p>
+                <p><strong>Medizinische Anwendung:</strong> Diagnose von Krankheiten basierend auf Symptomen und Testergebnissen.</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Unüberwachtes Lernen (Unsupervised Learning)</h4>
+                </div>
+                <p>Findet Muster in Daten ohne gelabelte Beispiele. Das Modell entdeckt versteckte Strukturen in den Daten.</p>
+                <p><strong>Medizinische Anwendung:</strong> Identifikation von Patientengruppen mit ähnlichen Krankheitsverläufen.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Large Language Models -->
+<section class="section">
+    <h3 class="section-title">Large Language Models (LLMs) in der Medizin</h3>
+    <div class="section-content">
+        <p>Large Language Models sind eine spezielle Art von AI-Modellen, die auf riesigen Textmengen trainiert wurden und menschenähnliche Texte verstehen und generieren können.</p>
+        
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="assets/llm-medical-workflow.png" alt="LLM-Workflow in der medizinischen Praxis" style="max-width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+        </div>
+        
+        <div class="alert alert-success">
+            <h4>Vorteile von LLMs in der Medizin</h4>
+            <ul>
+                <li><strong>Dokumentation:</strong> Automatisierte Erstellung von Arztbriefen und Berichten</li>
+                <li><strong>Diagnoseunterstützung:</strong> Analyse von Symptomen und Vorschlag möglicher Diagnosen</li>
+                <li><strong>Patientenkommunikation:</strong> Vereinfachung komplexer medizinischer Informationen</li>
+                <li><strong>Forschung:</strong> Analyse wissenschaftlicher Literatur und Identifikation von Trends</li>
+                <li><strong>Bildung:</strong> Personalisierte Lerninhalte für medizinische Ausbildung</li>
+            </ul>
+        </div>
+        
+        <p>Wichtig ist jedoch, dass LLMs als Unterstützungswerkzeuge und nicht als Ersatz für medizinische Fachkräfte eingesetzt werden sollten. Die finale Entscheidung und Verantwortung liegt immer beim Arzt.</p>
+    </div>
+</section>
+
+<!-- Prompt Engineering -->
+<section class="section">
+    <h3 class="section-title">Prompt Design und effektive Kommunikation mit AI</h3>
+    <div class="section-content">
+        <p><strong>Prompt Design</strong> ist die Kunst, klare und präzise Anweisungen für AI-Modelle zu formulieren, um die gewünschten Ergebnisse zu erhalten.</p>
+        
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Grundprinzipien effektiver Prompts</h4>
+            </div>
+            <ul>
+                <li><strong>Klarheit:</strong> Verwenden Sie präzise und eindeutige Sprache</li>
+                <li><strong>Kontext:</strong> Geben Sie relevante Hintergrundinformationen</li>
+                <li><strong>Spezifität:</strong> Definieren Sie genau, was Sie erwarten</li>
+                <li><strong>Struktur:</strong> Organisieren Sie Ihre Anfrage logisch</li>
+                <li><strong>Beispiele:</strong> Zeigen Sie gewünschte Ausgabeformate</li>
+            </ul>
+        </div>
+        
+        <div class="alert alert-warning">
+            <h4>Beispiel: Schlechter vs. Guter Prompt</h4>
+            <p><strong>Schlecht:</strong> "Erkläre Diabetes"</p>
+            <p><strong>Besser:</strong> "Erkläre Diabetes mellitus Typ 2 für einen Patienten ohne medizinische Vorkenntnisse. Verwende einfache Sprache und erkläre die wichtigsten Symptome, Ursachen und Behandlungsmöglichkeiten in maximal 200 Wörtern."</p>
+        </div>
+    </div>
+</section>
+
+<!-- AI Tools Overview -->
+<section class="section">
+    <h3 class="section-title">AI-Tools in der medizinischen Praxis</h3>
+    <div class="section-content">
+        <p>Es gibt verschiedene AI-Tools und Plattformen, die in der medizinischen Praxis eingesetzt werden können:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 20px 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Textbasierte AI</h4>
+                </div>
+                <ul>
+                    <li>ChatGPT, Claude, Gemini</li>
+                    <li>Medizinische Dokumentation</li>
+                    <li>Patientenkommunikation</li>
+                    <li>Literaturrecherche</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Bildanalyse-AI</h4>
+                </div>
+                <ul>
+                    <li>Radiologie-Assistenten</li>
+                    <li>Pathologie-Analyse</li>
+                    <li>Dermatologie-Screening</li>
+                    <li>Ophthalmologie-Diagnostik</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Spezialisierte Tools</h4>
+                </div>
+                <ul>
+                    <li>Drug Discovery Plattformen</li>
+                    <li>Genomik-Analyse</li>
+                    <li>Klinische Entscheidungsunterstützung</li>
+                    <li>Prädiktive Modelle</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Challenges and Considerations -->
+<section class="section">
+    <h3 class="section-title">Herausforderungen und wichtige Überlegungen</h3>
+    <div class="section-content">
+        <p>Beim Einsatz von AI in der Medizin müssen verschiedene Aspekte berücksichtigt werden:</p>
+        
+        <div class="alert alert-error">
+            <h4>Wichtige Herausforderungen</h4>
+            <ul>
+                <li><strong>Datenschutz und Privatsphäre:</strong> Schutz sensibler Patientendaten</li>
+                <li><strong>Bias und Fairness:</strong> Vermeidung von Diskriminierung in AI-Modellen</li>
+                <li><strong>Transparenz:</strong> Nachvollziehbarkeit von AI-Entscheidungen</li>
+                <li><strong>Regulierung:</strong> Einhaltung medizinischer Standards und Gesetze</li>
+                <li><strong>Ausbildung:</strong> Schulung des medizinischen Personals</li>
+            </ul>
+        </div>
+        
+        <p>Diese Herausforderungen werden in den folgenden Modulen ausführlicher behandelt, insbesondere in Modul 4, das sich mit ethischen Aspekten beschäftigt.</p>
+    </div>
+</section>
+
+<!-- Module Summary -->
+<section class="section">
+    <h3 class="section-title">Zusammenfassung Modul 1</h3>
+    <div class="section-content">
+        <p>In diesem Modul haben Sie die Grundlagen der Künstlichen Intelligenz und ihrer Anwendung in der Medizin kennengelernt:</p>
+        
+        <ul>
+            <li>Definition und Abgrenzung von AI, Machine Learning und Deep Learning</li>
+            <li>Funktionsweise und Anwendungsbereiche von Large Language Models</li>
+            <li>Grundlagen des Prompt Designs für effektive AI-Kommunikation</li>
+            <li>Überblick über verfügbare AI-Tools in der medizinischen Praxis</li>
+            <li>Wichtige Herausforderungen und Überlegungen beim AI-Einsatz</li>
+        </ul>
+        
+        <p>Im nächsten Modul werden wir ein konkretes Anwendungsbeispiel betrachten: den Einsatz von LLMs zur Vereinfachung der Tumordokumentation.</p>
+    </div>
+</section>
+
+<!-- Assessment -->
+<div class="assessment">
+    <h3 class="assessment-title">Lernzielkontrolle Modul 1</h3>
+    <p style="text-align: center; margin-bottom: 30px;">Beantworten Sie die folgenden Fragen, um Ihr Verständnis zu überprüfen. Sie benötigen mindestens 60% richtige Antworten, um das Modul abzuschließen.</p>
+    
+    <form id="assessment-form-1">
+        <div class="question">
+            <p class="question-text">1. Was ist der Hauptunterschied zwischen Künstlicher Intelligenz (AI) und Machine Learning (ML)?</p>
+            <ul class="options">
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q1" value="a">
+                        AI ist eine Disziplin der Informatik, während ML ein Teilbereich von AI ist
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q1" value="b">
+                        ML ist umfassender als AI und schließt AI mit ein
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q1" value="c">
+                        AI und ML sind identische Begriffe
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q1" value="d">
+                        AI funktioniert nur mit strukturierten Daten, ML mit unstrukturierten
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <p class="question-text">2. Welche Art von Machine Learning verwendet gelabelte Trainingsdaten?</p>
+            <ul class="options">
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q2" value="a">
+                        Unüberwachtes Lernen (Unsupervised Learning)
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q2" value="b">
+                        Überwachtes Lernen (Supervised Learning)
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q2" value="c">
+                        Verstärkendes Lernen (Reinforcement Learning)
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q2" value="d">
+                        Deep Learning
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <p class="question-text">3. Was ist ein wichtiges Prinzip für effektives Prompt Design?</p>
+            <ul class="options">
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q3" value="a">
+                        Verwenden Sie möglichst viele technische Begriffe
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q3" value="b">
+                        Halten Sie Prompts so kurz wie möglich
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q3" value="c">
+                        Seien Sie klar, spezifisch und geben Sie Kontext
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q3" value="d">
+                        Verwenden Sie nur Ja/Nein-Fragen
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <p class="question-text">4. Welche Rolle sollten LLMs in der medizinischen Praxis haben?</p>
+            <ul class="options">
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q4" value="a">
+                        Als Unterstützungswerkzeuge für medizinische Fachkräfte
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q4" value="b">
+                        Als vollständiger Ersatz für Ärzte
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q4" value="c">
+                        Nur für administrative Aufgaben
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q4" value="d">
+                        Ausschließlich für die Forschung
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <p class="question-text">5. Was ist eine wichtige Herausforderung beim Einsatz von AI in der Medizin?</p>
+            <ul class="options">
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q5" value="a">
+                        AI ist zu langsam für medizinische Anwendungen
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q5" value="b">
+                        Datenschutz und Schutz sensibler Patientendaten
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q5" value="c">
+                        AI kann nur mit englischen Texten arbeiten
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q5" value="d">
+                        AI-Modelle sind zu klein für medizinische Daten
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <button type="button" class="btn btn-primary btn-submit-assessment">
+                Lernzielkontrolle abschließen
+            </button>
+        </div>
+    </form>
+</div>
+
+<!-- Navigation -->
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid var(--medium-gray);">
+    <div>
+        <button class="btn btn-secondary" disabled>
+            ← Vorheriges Modul
+        </button>
+    </div>
+    <div>
+        <span style="color: var(--text-light); font-weight: 600;">Modul 1 von 4</span>
+    </div>
+    <div>
+        <button class="btn btn-primary btn-next-module" onclick="courseManager.startModule(2)" disabled id="next-module-btn">
+            Nächstes Modul - hier und dann oben klicken
+        </button>
+    </div>
+</div>
+
+<script>
+// Module 1 specific JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    // Update correct answers for Module 1
+    if (window.courseManager) {
+        // Override the getCorrectAnswers method for Module 1
+        const originalGetCorrectAnswers = window.courseManager.getCorrectAnswers;
+        window.courseManager.getCorrectAnswers = function(moduleNumber) {
+            if (moduleNumber === 1) {
+                return {
+                    'q1': 'a', // AI ist eine Disziplin der Informatik, während ML ein Teilbereich von AI ist
+                    'q2': 'b', // Überwachtes Lernen (Supervised Learning)
+                    'q3': 'c', // Seien Sie klar, spezifisch und geben Sie Kontext
+                    'q4': 'a', // Als Unterstützungswerkzeuge für medizinische Fachkräfte
+                    'q5': 'b'  // Datenschutz und Schutz sensibler Patientendaten
+                };
+            }
+            return originalGetCorrectAnswers.call(this, moduleNumber);
+        };
+    }
+});
+</script>
+

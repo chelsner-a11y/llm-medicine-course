@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicalLLMs Basics - Charlotte Fresenius Hochschule</title>
+    <meta name="description" content="Interaktiver Lernkurs zu den Grundlagen der LLM/AI-Verwendung in der Medizin von Christian Elsner">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏥</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            PD DR. MED. CHRISTIAN ELSNER<br>
+        </div>
+        <h1>LLMs in der Medizin Basiskurs</h1>
+        <p class="subtitle">Interaktiver Lernkurs mit Case Studies und Lernzielkontrollen</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav">
+            <div class="nav-modules">
+                <a href="#" class="nav-module active" data-module="1">
+                    Modul 1: Einführung in AI/LLM
+                </a>
+                <a href="#" class="nav-module" data-module="2">
+                    Modul 2: Tumordokumentation
+                </a>
+                <a href="#" class="nav-module" data-module="3">
+                    Modul 3: PENDA Studie
+                </a>
+                <a href="#" class="nav-module" data-module="4">
+                    Modul 4: Ethik in AI
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%;"></div>
+        </div>
+        <div class="progress-text">Fortschritt: 0/4 Module abgeschlossen (0%)</div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div id="module-content" class="module-content fade-in">
+            <!-- Module 1 Content (Default) -->
+            <div class="module-header">
+                <h2 class="module-title">Modul 1: Einführung in Generative AI für die Medizin</h2>
+                <p class="module-subtitle">Grundlagen, Definitionen und Anwendungsbereiche von AI und LLMs in der Medizin</p>
+            </div>
+
+            <!-- Welcome Section -->
+            <section class="section">
+                <h3 class="section-title">Willkommen zum Kurs</h3>
+                <div class="section-content">
+                    <p>Herzlich willkommen zu unserem interaktiven Lernkurs "Grundlagen der LLM/AI-Verwendung in der Medizin". Dieser Kurs führt Sie durch die wichtigsten Aspekte der Anwendung von Künstlicher Intelligenz und Large Language Models in der medizinischen Praxis.</p>
+                    
+                    <p>Der Kurs ist in vier Module gegliedert, die jeweils etwa 30 Minuten Ihrer Zeit in Anspruch nehmen. Jedes Modul schließt mit einer Lernzielkontrolle ab, die aus 3-5 Multiple-Choice-Fragen besteht.</p>
+                    
+                    <div class="alert alert-info">
+                        <h4>Wichtiger Hinweis zu ChatGPT</h4>
+                        <p>Für die interaktiven Case Studies in diesem Kurs benötigen Sie einen kostenlosen ChatGPT-Account. Bitte registrieren Sie sich unter <a href="https://chat.openai.com" target="_blank" class="external-link">chat.openai.com</a>, falls Sie noch keinen Account haben.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Course Overview -->
+            <section class="section">
+                <h3 class="section-title">Kursübersicht</h3>
+                <div class="section-content">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 20px 0;">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Modul 1: Einführung in AI/LLM</h4>
+                            </div>
+                            <p>Grundlagen der Künstlichen Intelligenz, Machine Learning und Large Language Models in der Medizin. Definitionen, Funktionsweise und Anwendungsbereiche.</p>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Modul 2: Tumordokumentation</h4>
+                            </div>
+                            <p>Praktisches Fallbeispiel: LLM-System zur Erleichterung der Tumordokumentation. Interaktive Case Study mit dem OnkoTutor.</p>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Modul 3: PENDA Studie</h4>
+                            </div>
+                            <p>Reale Anwendung von AI-Copiloten in der Primärversorgung in Kenia. Ergebnisse und Erkenntnisse aus der Praxis.</p>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">Modul 4: Ethik in AI</h4>
+                            </div>
+                            <p>Ethische Aspekte der AI-Anwendung im Gesundheitswesen. Deskilling-Problematik und verantwortungsvoller Einsatz.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Learning Objectives -->
+            <section class="section">
+                <h3 class="section-title">Lernziele des Kurses</h3>
+                <div class="section-content">
+                    <p>Nach Abschluss dieses Kurses werden Sie in der Lage sein:</p>
+                    <ul>
+                        <li>Die Grundlagen von Künstlicher Intelligenz, Machine Learning und Large Language Models zu verstehen</li>
+                        <li>Praktische Anwendungsfälle von AI in der Medizin zu identifizieren und zu bewerten</li>
+                        <li>Die Funktionsweise und den Nutzen von AI-gestützten Dokumentationssystemen zu verstehen</li>
+                        <li>Ethische Aspekte und Herausforderungen beim Einsatz von AI im Gesundheitswesen zu reflektieren</li>
+                        <li>Verantwortungsvolle Entscheidungen über den Einsatz von AI-Technologien in der medizinischen Praxis zu treffen</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Getting Started -->
+            <section class="section">
+                <h3 class="section-title">Erste Schritte</h3>
+                <div class="section-content">
+                    <p>Um mit dem Kurs zu beginnen, klicken Sie auf den Button unten. Ihr Fortschritt wird automatisch gespeichert, sodass Sie den Kurs jederzeit unterbrechen und später fortsetzen können.</p>
+                    
+                    <div class="alert alert-warning">
+                        <h4>Technische Anforderungen</h4>
+                        <ul>
+                            <li>Moderner Webbrowser (Chrome, Firefox, Safari, Edge)</li>
+                            <li>Internetverbindung für externe Links und Case Studies</li>
+                            <li>Kostenloses ChatGPT-Konto für interaktive Übungen</li>
+                            <li>Etwa 2 Stunden Zeit für den gesamten Kurs</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="text-align: center; margin: 30px 0;">
+                        <button onclick="courseManager.startModule(1)" class="btn btn-primary" style="font-size: 1.2rem; padding: 15px 30px;">
+                            Kurs beginnen - Modul 1 starten
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Assessment Result Area -->
+        <div id="assessment-result"></div>
+
+        <!-- Certificate Section (Hidden initially) -->
+        <div id="certificate-section" style="display: none;">
+            <div class="certificate-preview">
+                <h3 class="certificate-title">Kurszertifikat verfügbar!</h3>
+                <p class="certificate-text">Sie haben alle Module erfolgreich abgeschlossen.</p>
+                <button onclick="courseManager.generateCertificate()" class="btn btn-success btn-generate-certificate">
+                    Zertifikat generieren und herunterladen
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: var(--light-gray); padding: var(--spacing-lg); text-align: center; margin-top: var(--spacing-xl); border-top: 2px solid var(--medium-gray);">
+        <p style="color: var(--text-light); margin-bottom: var(--spacing-sm);">
+            © 2025 Christian Elsner
+        </p>
+        <p style="color: var(--text-light); font-size: 0.9rem;">
+            Dieser Kurs wurde entwickelt für die Ausbildung in den Grundlagen der LLM/AI-Verwendung in der Medizin.
+        </p>
+        <div style="margin-top: var(--spacing-md);">
+            <a href="#" onclick="courseManager.exportProgress()" style="color: var(--primary-magenta); text-decoration: none; margin: 0 10px;">Fortschritt exportieren</a>
+            <a href="#" onclick="courseManager.resetProgress()" style="color: var(--primary-magenta); text-decoration: none; margin: 0 10px;">Kurs zurücksetzen</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/course.js"></script>
+    
+    <script>
+        // Additional initialization and helper functions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if all modules are completed to show certificate section
+            function checkCertificateAvailability() {
+                if (window.courseManager) {
+                    const allCompleted = Object.values(window.courseManager.moduleProgress).every(m => m.completed);
+                    const certificateSection = document.getElementById('certificate-section');
+                    if (certificateSection) {
+                        certificateSection.style.display = allCompleted ? 'block' : 'none';
+                    }
+                }
+            }
+            
+            // Check certificate availability periodically
+            setInterval(checkCertificateAvailability, 1000);
+            
+            // Add smooth transitions to all elements
+            document.querySelectorAll('.card, .btn, .nav-module').forEach(element => {
+                element.style.transition = 'all 0.3s ease';
+            });
+            
+            // Add loading states to buttons
+            document.querySelectorAll('.btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    if (!this.classList.contains('loading')) {
+                        const originalText = this.textContent;
+                        this.classList.add('loading');
+                        this.innerHTML = '<span class="loading"></span> Laden...';
+                        
+                        setTimeout(() => {
+                            this.classList.remove('loading');
+                            this.textContent = originalText;
+                        }, 1000);
+                    }
+                });
+            });
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey || e.metaKey) {
+                switch(e.key) {
+                    case 'ArrowLeft':
+                        e.preventDefault();
+                        if (window.courseManager) window.courseManager.previousModule();
+                        break;
+                    case 'ArrowRight':
+                        e.preventDefault();
+                        if (window.courseManager) window.courseManager.nextModule();
+                        break;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+

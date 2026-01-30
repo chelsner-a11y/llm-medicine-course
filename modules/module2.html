@@ -1,0 +1,412 @@
+<!-- Module 2: Tumor Documentation Case Study -->
+<div class="module-header">
+    <h2 class="module-title">Modul 2: LLM-System zur Tumordokumentation</h2>
+    <p class="module-subtitle">Praktisches Fallbeispiel: Automatisierte Unterstützung bei der Tumordokumentation in der Urologie</p>
+</div>
+
+<!-- Introduction Section -->
+<section class="section">
+    <h3 class="section-title">Einführung in das Fallbeispiel</h3>
+    <div class="section-content">
+        <p>In diesem Modul betrachten wir ein konkretes Anwendungsbeispiel für Large Language Models in der medizinischen Praxis: die Unterstützung bei der Tumordokumentation in der Urologie.</p>
+        
+        <p>Die Qualitätssicherung und Dokumentation von Tumorerkrankungen erfordert aktuell einen hohen Arbeitsaufwand. Daten müssen unter verschiedenen Aspekten in leicht variierenden Formaten übertragen und Interpretationen wie die TNM-Klassifikation von Tumoren angewendet werden.</p>
+        
+        <div class="alert alert-info">
+            <h4>Warum ist Tumordokumentation wichtig?</h4>
+            <p>Eine präzise Tumordokumentation ist essentiell für:</p>
+            <ul>
+                <li>Qualitätssicherung in der Onkologie</li>
+                <li>Epidemiologische Forschung</li>
+                <li>Therapieplanung und -überwachung</li>
+                <li>Nachsorge und Verlaufskontrolle</li>
+                <li>Gesetzliche Dokumentationspflichten</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Case Study Overview -->
+<section class="section">
+    <h3 class="section-title">Die Lübecker Studie: LLMs in der Tumordokumentation</h3>
+    <div class="section-content">
+        <p>Forscher der Universität zu Lübeck haben eine wegweisende Studie durchgeführt, um die Anwendbarkeit von Large Language Models bei der Tumordokumentation zu evaluieren. Die Studie verwendete ChatGPT 4.0 zur Extraktion von Tumordaten aus realen Arztbriefen.</p>
+        
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">Studiendesign</h4>
+            </div>
+            <ul>
+                <li><strong>Datenbasis:</strong> 153 datenschutztechnisch freigegebene Arztbriefe von 25 Patienten</li>
+                <li><strong>AI-System:</strong> ChatGPT 4.0 (öffentlich verfügbare Version)</li>
+                <li><strong>Aufgaben:</strong> Extraktion von Erstdiagnosedatum und Tumorklassifikationen</li>
+                <li><strong>Methodik:</strong> Automatisiertes Programmskript mit anschließender manueller Validierung</li>
+                <li><strong>Bewertung:</strong> Kosten-Nutzen-Analyse und Praktikabilitätsbewertung</li>
+            </ul>
+        </div>
+        
+        <div class="alert alert-success">
+            <h4>Zentrale Ergebnisse</h4>
+            <p>Die Studie kam zu dem Schluss, dass der Einsatz generativer KI in diesem Feld vielversprechend ist und bereits im untrainierten Zustand als Hilfe tauglich ist. In einer vereinfachten Kalkulation stehen Kosten von 35 Cent einer Wertschöpfung von 61,54 Euro gegenüber.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Implementation -->
+<section class="section">
+    <h3 class="section-title">Technische Umsetzung und Herausforderungen</h3>
+    <div class="section-content">
+        <p>Die Implementierung von LLM-Systemen in der Tumordokumentation bringt verschiedene technische und organisatorische Herausforderungen mit sich:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Datenschutz</h4>
+                </div>
+                <p>Verwendung anonymisierter Daten oder lokaler LLM-Instanzen zur Minimierung von Datenschutzrisiken. Die Studie verwendete vollständig pseudonymisierte Daten nach DSGVO-Standards.</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Qualitätskontrolle</h4>
+                </div>
+                <p>Menschliche Überprüfung und Freigabe aller AI-generierten Daten durch qualifizierte Mediziner. Die Endverantwortung bleibt beim medizinischen Fachpersonal.</p>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Integration</h4>
+                </div>
+                <p>Einbettung in bestehende Arbeitsabläufe mit vorgefertigten, spezifischen Prompts und ergonomischen Werkzeugen für optimale Performance.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Practical Benefits -->
+<section class="section">
+    <h3 class="section-title">Praktischer Nutzen und Effizienzsteigerung</h3>
+    <div class="section-content">
+        <p>Der Einsatz von LLMs in der Tumordokumentation bietet erhebliche Vorteile:</p>
+        
+        <div class="alert alert-success">
+            <h4>Effizienzsteigerungen</h4>
+            <ul>
+                <li><strong>Zeitersparnis:</strong> Automatisierte Extraktion von Schlüsselinformationen aus Freitexten</li>
+                <li><strong>Standardisierung:</strong> Einheitliche Formatierung und Klassifikation von Tumordaten</li>
+                <li><strong>Fehlerreduktion:</strong> Minimierung manueller Übertragungsfehler</li>
+                <li><strong>Kosteneffizienz:</strong> Deutliche Reduktion des Arbeitsaufwands bei der Dokumentation</li>
+            </ul>
+        </div>
+        
+        <p>Die Lübecker Studie zeigt, dass LLMs besonders gut geeignet sind für:</p>
+        <ul>
+            <li>Extraktion von Erstdiagnosedaten aus Arztbriefen</li>
+            <li>Klassifikation nach TNM-System</li>
+            <li>Identifikation relevanter Tumorcharakteristika</li>
+            <li>Strukturierung unstrukturierter medizinischer Texte</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Resources and Materials -->
+<section class="section">
+    <h3 class="section-title">Studienmaterialien und weiterführende Ressourcen</h3>
+    <div class="section-content">
+        <p>Für ein tieferes Verständnis der Studie und ihrer Ergebnisse stehen Ihnen folgende Ressourcen zur Verfügung:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">📄 Originalstudie</h4>
+                </div>
+                <p>Die vollständige Publikation "Large Language Modelle zur schnellen Vereinfachung der Eingabe von Qualitätssicherungsdaten" aus der Zeitschrift Aktuelle Urologie.</p>
+                <a href="downloads/LLMsTumordokuArtikel.pdf" download class="download-link">
+                    📥 PDF herunterladen
+                </a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">🎧 Podcast</h4>
+                </div>
+                <p>Hören Sie sich die Case Study als Podcast an für eine alternative Lernmethode.</p>
+                <a href="https://drive.google.com/file/d/1oQR9DpTbha0eKqt5A3NuKsAvf3pbwL1v/view?usp=sharing" target="_blank" class="external-link">
+                    🎵 Podcast anhören
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Interactive Exercise -->
+<section class="section">
+    <h3 class="section-title">Interaktive Übung: OnkoTutor ausprobieren</h3>
+    <div class="section-content">
+        <p>Jetzt haben Sie die Gelegenheit, selbst zu erleben, wie ein LLM-System bei der Tumordokumentation unterstützen kann!</p>
+        
+        <div class="alert alert-warning">
+            <h4>🚀 Praktische Übung</h4>
+            <p>Probieren Sie den <strong>OnkoTutor</strong> mit echten Demodaten aus und experimentieren Sie mit verschiedenen Anfragen zur Tumordokumentation.</p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">🤖 OnkoTutor GPT</h4>
+                </div>
+                <p>Ein spezialisiertes ChatGPT-Modell für die Tumordokumentation. Benötigt einen kostenlosen ChatGPT-Account.</p>
+                <a href="https://chatgpt.com/g/g-68a312c251a4819194cf9c9c81e37f5f-onkotutor" target="_blank" class="btn btn-primary">
+                    OnkoTutor öffnen
+                </a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">📊 Demodaten</h4>
+                </div>
+                <p>Realistische Beispieldaten für Ihre Experimente mit dem OnkoTutor.</p>
+                <a href="https://drive.google.com/drive/folders/1tuF9avCMq_wP15dRBK0TpH2b38-nyPi3?usp=sharing" target="_blank" class="btn btn-secondary">
+                    Demodaten abrufen
+                </a>
+            </div>
+        </div>
+        
+        <div class="alert alert-info">
+            <h4>💡 Übungsvorschläge</h4>
+            <p>Versuchen Sie folgende Aufgaben mit dem OnkoTutor:</p>
+            <ul>
+                <li>Extraktion des Erstdiagnosedatums aus einem Arztbrief</li>
+                <li>TNM-Klassifikation eines Tumors basierend auf Befunddaten</li>
+                <li>Strukturierung unstrukturierter Tumordaten</li>
+                <li>Generierung einer standardisierten Tumordokumentation</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Lessons Learned -->
+<section class="section">
+    <h3 class="section-title">Erkenntnisse und Schlussfolgerungen</h3>
+    <div class="section-content">
+        <p>Die Lübecker Studie liefert wichtige Erkenntnisse für den praktischen Einsatz von LLMs in der medizinischen Dokumentation:</p>
+        
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">✅ Erfolgsfaktoren</h4>
+            </div>
+            <ul>
+                <li><strong>Spezifische Prompts:</strong> Vorgefertigte, aufgabenspezifische Anweisungen sind entscheidend</li>
+                <li><strong>Menschliche Kontrolle:</strong> AI als Unterstützung, nicht als Ersatz für medizinische Expertise</li>
+                <li><strong>Datenschutz:</strong> Anonymisierung und lokale Verarbeitung minimieren Risiken</li>
+                <li><strong>Integration:</strong> Nahtlose Einbindung in bestehende Arbeitsabläufe</li>
+            </ul>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">⚠️ Herausforderungen</h4>
+            </div>
+            <ul>
+                <li><strong>Qualitätssicherung:</strong> Kontinuierliche Überwachung der AI-Ausgaben erforderlich</li>
+                <li><strong>Schulung:</strong> Medizinisches Personal muss im Umgang mit AI-Tools geschult werden</li>
+                <li><strong>Regulierung:</strong> Einhaltung medizinischer Standards und gesetzlicher Vorgaben</li>
+                <li><strong>Technologie:</strong> Abhängigkeit von externer AI-Infrastruktur</li>
+            </ul>
+        </div>
+        
+        <p>Die Studie zeigt, dass der Einsatz von generativer KI im Kontext von Such-, Übertragungs- und Interpretationsarbeiten bei der Erstellung einer Tumordokumentation ein vielversprechender Ansatz ist. Die Umsetzung muss jedoch in praktischer Anwendung eng begleitet werden.</p>
+    </div>
+</section>
+
+<!-- Module Summary -->
+<section class="section">
+    <h3 class="section-title">Zusammenfassung Modul 2</h3>
+    <div class="section-content">
+        <p>In diesem Modul haben Sie ein konkretes Anwendungsbeispiel für LLMs in der medizinischen Praxis kennengelernt:</p>
+        
+        <ul>
+            <li>Die Herausforderungen der traditionellen Tumordokumentation</li>
+            <li>Ergebnisse der Lübecker Studie zur LLM-gestützten Tumordokumentation</li>
+            <li>Technische Umsetzung und Datenschutzaspekte</li>
+            <li>Praktische Vorteile und Effizienzsteigerungen</li>
+            <li>Hands-on Erfahrung mit dem OnkoTutor</li>
+            <li>Erfolgsfaktoren und Herausforderungen beim Einsatz von LLMs</li>
+        </ul>
+        
+        <p>Im nächsten Modul werden wir eine weitere Fallstudie betrachten: die PENDA-Studie über AI-Copiloten in der Primärversorgung in Kenia.</p>
+    </div>
+</section>
+
+<!-- Assessment -->
+<div class="assessment">
+    <h3 class="assessment-title">Lernzielkontrolle Modul 2</h3>
+    <p style="text-align: center; margin-bottom: 30px;">Beantworten Sie die folgenden Fragen basierend auf dem Fallbeispiel der Tumordokumentation. Sie benötigen mindestens 60% richtige Antworten, um das Modul abzuschließen.</p>
+    
+    <form id="assessment-form-2">
+        <div class="question">
+            <p class="question-text">1. Was war das Hauptziel der Lübecker Studie zur LLM-gestützten Tumordokumentation?</p>
+            <ul class="options">
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q1" value="a">
+                        Entwicklung eines neuen Tumordokumentationssystems
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q1" value="b">
+                        Evaluation der Anwendbarkeit von LLMs bei der Extraktion von Tumordaten
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q1" value="c">
+                        Ersetzung von Ärzten durch AI-Systeme
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q1" value="d">
+                        Kostenreduktion in der Onkologie
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <p class="question-text">2. Welche Datenbasis wurde in der Lübecker Studie verwendet?</p>
+            <ul class="options">
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q2" value="a">
+                        153 datenschutztechnisch freigegebene Arztbriefe von 25 Patienten
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q2" value="b">
+                        Synthetische, künstlich generierte Patientendaten
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q2" value="c">
+                        Öffentlich verfügbare medizinische Datenbanken
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q2" value="d">
+                        Internationale Tumordatenbanken
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <p class="question-text">3. Was ist ein wichtiger Erfolgsfaktor für den Einsatz von LLMs in der Tumordokumentation?</p>
+            <ul class="options">
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q3" value="a">
+                        Vollständige Automatisierung ohne menschliche Kontrolle
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q3" value="b">
+                        Verwendung allgemeiner, unspezifischer Prompts
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q3" value="c">
+                        Vorgefertigte, aufgabenspezifische Prompts und menschliche Kontrolle
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q3" value="d">
+                        Ausschließliche Verwendung von Cloud-basierten Lösungen
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="question">
+            <p class="question-text">4. Welches Kosten-Nutzen-Verhältnis ergab die vereinfachte Kalkulation der Studie?</p>
+            <ul class="options">
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q4" value="a">
+                        Kosten von 61,54 Euro stehen einer Wertschöpfung von 35 Cent gegenüber
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q4" value="b">
+                        Kosten von 35 Cent stehen einer Wertschöpfung von 61,54 Euro gegenüber
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q4" value="c">
+                        Die Kosten übersteigen den Nutzen deutlich
+                    </label>
+                </li>
+                <li class="option">
+                    <label>
+                        <input type="radio" name="q4" value="d">
+                        Keine Kostenanalyse wurde durchgeführt
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <button type="button" class="btn btn-primary btn-submit-assessment">
+                Lernzielkontrolle abschließen
+            </button>
+        </div>
+    </form>
+</div>
+
+<!-- Navigation -->
+<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid var(--medium-gray);">
+    <div>
+        <button class="btn btn-secondary btn-prev-module">
+            ← Modul 1
+        </button>
+    </div>
+    <div>
+        <span style="color: var(--text-light); font-weight: 600;">Modul 2 von 4</span>
+    </div>
+    <div>
+         <button class="btn btn-primary btn-next-module" onclick="courseManager.startModule(3)" disabled id="next-module-btn">
+            Nächstes Modul - hier und dann oben klicken
+        </button>
+    </div>
+</div>
+
+<script>
+// Module 2 specific JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    // Update correct answers for Module 2
+    if (window.courseManager) {
+        const originalGetCorrectAnswers = window.courseManager.getCorrectAnswers;
+        window.courseManager.getCorrectAnswers = function(moduleNumber) {
+            if (moduleNumber === 2) {
+                return {
+                    'q1': 'b', // Evaluation der Anwendbarkeit von LLMs bei der Extraktion von Tumordaten
+                    'q2': 'a', // 153 datenschutztechnisch freigegebene Arztbriefe von 25 Patienten
+                    'q3': 'c', // Vorgefertigte, aufgabenspezifische Prompts und menschliche Kontrolle
+                    'q4': 'b'  // Kosten von 35 Cent stehen einer Wertschöpfung von 61,54 Euro gegenüber
+                };
+            }
+            return originalGetCorrectAnswers.call(this, moduleNumber);
+        };
+    }
+});
+</script>
+
